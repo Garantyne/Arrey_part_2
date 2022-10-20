@@ -35,14 +35,16 @@ public class Main {
         ///Задание 4
         char tmp;
         char[] reverseFullName = { 'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};
-        for (int i = 0; i < reverseFullName.length/2; i++) {
-            tmp =reverseFullName[i];
-            reverseFullName[i] = reverseFullName[reverseFullName.length - i- 1] ;
-            reverseFullName[reverseFullName.length - i- 1]  = tmp;
-        }
-        for (int i = 0; i < reverseFullName.length; i++) {
+        for (int i = 0, j = reverseFullName.length - i - 1;i < reverseFullName.length; i++,j--) {
+            if(i<reverseFullName.length/2) {
+                tmp = reverseFullName[i];
+                reverseFullName[i] = reverseFullName[j];
+                reverseFullName[j] = tmp;
+            }
             System.out.print(reverseFullName[i]);
-        }//а можно какую нибудь кратенькую инструкцию по опльзованию отладчиков в ИДЕИ а то прокопался долго из за того
+        }
+
+
     }//что не умею им тут пользоваться
 
 
