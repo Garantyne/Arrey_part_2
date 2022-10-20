@@ -1,27 +1,27 @@
 public class Main {
     public static void main(String[] args) {
 
-    Random r = new Random();
+    Random random = new Random();
     //Задача 1
-        for (int i = 0; i < r.arr.length; i++) {// предположим что этот цикл выводит траты за месяц и генерирует их со-
-            System.out.println(r.arr[i]);//ответственно тоже он.
+        for (int i = 0; i < random.arr.length; i++) {// предположим что этот цикл выводит траты за месяц и генерирует их со-
+            System.out.println(random.arr[i]);//ответственно тоже он.
         }
         int summForMount = 0;
-        for (int i = 0; i < r.arr.length; i++) {
-            summForMount += r.arr[i];
+        for (int i = 0; i < random.arr.length; i++) {
+            summForMount += random.arr[i];
         }
         System.out.println("Сумма трат за месяц составила " + summForMount);//а вы можете мне в обратной связи написать
         //возмонж есть какая то команда которая в выводе в консоле разделяет число по 3 знака, что бы читать было удобней
         //Задание 2
 
-        int min = r.arr[0];//минимальное значение приравниеваем к массиву
-        int max = r.arr[0];//максимальное тоже что бы все было кошерно))
-        for (int i = 0; i < r.arr.length; i++) {
-            if(r.arr[i]>max){
-                max=r.arr[i];
+        int min = random.arr[0];//минимальное значение приравниеваем к массиву
+        int max = random.arr[0];//максимальное тоже что бы все было кошерно))
+        for (int i = 0; i < random.arr.length; i++) {
+            if(random.arr[i]>max){
+                max=random.arr[i];
             }
-            if(r.arr[i]<min){
-                min = r.arr[i];
+            if(random.arr[i]<min){
+                min = random.arr[i];
             }
         }
         System.out.println("Максимальное число в массиве равно " + max);
@@ -29,8 +29,8 @@ public class Main {
 
         //Задание 3
 
-        double medianSumm = summForMount / r.arr.length;
-        System.out.println("Средняя сумма которую тратит компания в месяц составляет " + medianSumm);
+        double averageSumm = summForMount / random.arr.length;
+        System.out.println("Средняя сумма которую тратит компания в месяц составляет " + averageSumm);
         //хз как суда цикл пилить, вроде и не требуется, но если что пишите, ещё подумаю)
         //Задание 4
         char tmp;
