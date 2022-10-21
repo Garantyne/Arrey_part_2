@@ -32,17 +32,12 @@ public class Main {
         double averageSumm = summForMount / random.arr.length;
         System.out.println("Средняя сумма которую тратит компания в месяц составляет " + averageSumm);
         //хз как суда цикл пилить, вроде и не требуется, но если что пишите, ещё подумаю)
-        //Задание 4
+        ///Задание 4
         char tmp;
-        char[] reverseFullName = { 'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};
-        for (int i = 0; i < reverseFullName.length/2; i++) {
-            tmp =reverseFullName[i];
-            reverseFullName[i] = reverseFullName[reverseFullName.length - i- 1] ;
-            reverseFullName[reverseFullName.length - i- 1]  = tmp;
-        }
-        for (int i = 0; i < reverseFullName.length; i++) {
-            System.out.print(reverseFullName[i]);
-        }//а можно какую нибудь кратенькую инструкцию по опльзованию отладчиков в ИДЕИ а то прокопался долго из за того
-    }//что не умею им тут пользоваться
 
+        char[] reverseFullName = { 'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};
+        for (int i = reverseFullName.length - 1; i > 0; i--) {
+            System.out.print(reverseFullName[i]);
+        }
+    }//что не умею им тут пользоваться
 }
