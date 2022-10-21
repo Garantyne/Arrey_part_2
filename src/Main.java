@@ -34,18 +34,10 @@ public class Main {
         //хз как суда цикл пилить, вроде и не требуется, но если что пишите, ещё подумаю)
         ///Задание 4
         char tmp;
+
         char[] reverseFullName = { 'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};
-        for (int i = 0, j = reverseFullName.length - i - 1;i < reverseFullName.length; i++,j--) {
-            if(i<reverseFullName.length/2) {
-                tmp = reverseFullName[i];
-                reverseFullName[i] = reverseFullName[j];
-                reverseFullName[j] = tmp;
-            }
+        for (int i = reverseFullName.length - 1; i > 0; i--) {
             System.out.print(reverseFullName[i]);
         }
-
-
     }//что не умею им тут пользоваться
-
-
 }
